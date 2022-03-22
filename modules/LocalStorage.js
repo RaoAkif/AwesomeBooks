@@ -1,4 +1,4 @@
-import UI from './UI.js';
+import UIClear from './UI.js';
 
 // Store a Book
 class Store {
@@ -28,7 +28,7 @@ class Store {
       }
     });
     localStorage.setItem('books', JSON.stringify(books));
-    UI.clearFields();
+    UIClear.clearFields();
   }
 }
 

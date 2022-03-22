@@ -61,6 +61,6 @@ document.querySelector('#book-list-table').addEventListener('click', (e) => {
   // Remove book from store
   Store.removeBook(
     e.target.parentElement.parentElement.parentElement.firstElementChild
-      .textContent
+      .textContent,
   );
 });

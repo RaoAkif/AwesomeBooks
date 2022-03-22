@@ -1,9 +1,9 @@
-import Store from './LocalStorage.js';
+import StoreClass from './LocalStorage.js';
 
 class UI {
   // Display the list of Books
   static displayBooks() {
-    const books = Store.getBooks();
+    const books = StoreClass.getBooks();
     books.forEach((book) => UI.addBookToList(book));
   }
 
