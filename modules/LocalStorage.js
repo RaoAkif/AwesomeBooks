@@ -1,6 +1,3 @@
-import UIClear from './UI.js';
-
-// Store a Book
 class Store {
   static getBooks() {
     let books;
@@ -28,8 +25,10 @@ class Store {
       }
     });
     localStorage.setItem('books', JSON.stringify(books));
-    UIClear.clearFields();
+    document.querySelector('#title').value = '';
+    document.querySelector('#author').value = '';
+    }
   }
-}
 
 export default Store;
+
