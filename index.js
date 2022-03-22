@@ -7,7 +7,6 @@ setInterval(() => {
   document.getElementById('date').textContent = new Date();
 }, 1000);
 
-
 // Show bookList
 domSelectors.bookListView.classList.toggle('show');
 
@@ -29,7 +28,6 @@ domSelectors.GoToContact.addEventListener('click', () => {
   domSelectors.addBookView.classList.remove('show');
   domSelectors.bookListView.classList.remove('show');
 });
-
 
 // Event: Display Books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);

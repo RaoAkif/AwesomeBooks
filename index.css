@@ -20,20 +20,21 @@ body {
 
 #delete-btn {
   text-decoration: none;
+  color: black;
 }
 
 table {
   border: solid black 1px;
 }
 
-tr:nth-child(odd) {
-  background-color: #f2f2f2;
-}
-
 tr {
   display: flex;
   justify-content: space-between;
 }
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}  
 
 .alert {
   padding-bottom: 5px;
@@ -65,21 +66,15 @@ td {
   border: 1px solid black;
 }
 
-#nav-bar-div {
-  padding-left: 20px;
-  margin-top: 5px;
-}
-
-#nav-bar-div > * {
-  text-decoration: none;
-  color: black;
-  font-size: 22px;
-}
-
 .nav-list {
   list-style: none;
   display: flex;
   margin: 0 16px 0 16px;
+}
+
+.nav-list > * > * {
+  color: black;
+  text-decoration: none;
 }
 
 .nav-list > * {
@@ -91,9 +86,15 @@ td {
   box-shadow: 3px 3px 0px black;
 }
 
-.nav-list > * > * {
-  color: black;
+#nav-bar-div {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+#nav-bar-div > * {
   text-decoration: none;
+  color: black;
+  font-size: 22px;
 }
 
 #date-div {
@@ -115,7 +116,6 @@ td {
 }
 
 .sec-all-books.show {
-  display: block;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -158,8 +158,4 @@ footer {
   text-align: center;
   padding: 10px;
   font-weight: bold;
-}
-
-#delete-btn {
-  color: black;
 }

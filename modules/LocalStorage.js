@@ -1,3 +1,5 @@
+import UI from './UI.js';
+
 // Store a Book
 class Store {
   static getBooks() {
@@ -26,7 +28,7 @@ class Store {
       }
     });
     localStorage.setItem('books', JSON.stringify(books));
-    clearFields();
+    UI.clearFields();
   }
 }
 
