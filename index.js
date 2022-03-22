@@ -77,8 +77,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   const author = document.querySelector('#author').value;
   // Validate
   if (title === '' || author === '') {
-    return;
-  } else {
+  }
     // Instatiate book
     const book = new Book(title, author);
     // Add Book to UI
@@ -87,7 +86,6 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
     Store.addBook(book);
     // Clear fields
     UI.clearFields();
-  }
 });
 
 // Event: Remove a Book
