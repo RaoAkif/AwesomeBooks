@@ -1,4 +1,4 @@
-import domSelectors from "./modules/domSelectors.js";
+import domSelectors from './modules/domSelectors.js';
 import Store from './modules/LocalStorage.js';
 import Book from './modules/Book.js';
 import UI from './modules/UI.js';
@@ -9,39 +9,39 @@ setInterval(() => {
 
 
 // Show bookList
-domSelectors.bookListView.classList.toggle("show");
+domSelectors.bookListView.classList.toggle('show');
 
 // NavBar Eventlisteners
-domSelectors.GoToBookList.addEventListener("click", () => {
-  domSelectors.bookListView.classList.add("show");
-  domSelectors.addBookView.classList.remove("show");
-  domSelectors.contactView.classList.remove("show");
+domSelectors.GoToBookList.addEventListener('click', () => {
+  domSelectors.bookListView.classList.add('show');
+  domSelectors.addBookView.classList.remove('show');
+  domSelectors.contactView.classList.remove('show');
 });
 
-domSelectors.GoToAddBook.addEventListener("click", () => {
-  domSelectors.addBookView.classList.add("show");
-  domSelectors.bookListView.classList.remove("show");
-  domSelectors.contactView.classList.remove("show");
+domSelectors.GoToAddBook.addEventListener('click', () => {
+  domSelectors.addBookView.classList.add('show');
+  domSelectors.bookListView.classList.remove('show');
+  domSelectors.contactView.classList.remove('show');
 });
 
-domSelectors.GoToContact.addEventListener("click", () => {
-  domSelectors.contactView.classList.add("show");
-  domSelectors.addBookView.classList.remove("show");
-  domSelectors.bookListView.classList.remove("show");
+domSelectors.GoToContact.addEventListener('click', () => {
+  domSelectors.contactView.classList.add('show');
+  domSelectors.addBookView.classList.remove('show');
+  domSelectors.bookListView.classList.remove('show');
 });
 
 
 // Event: Display Books
-document.addEventListener("DOMContentLoaded", UI.displayBooks);
+document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
 // Event: Add a Book
-document.querySelector("#book-form").addEventListener("submit", (e) => {
+document.querySelector('#book-form').addEventListener('submit', (e) => {
   e.preventDefault();
   // Get form values
-  const title = document.querySelector("#title").value;
-  const author = document.querySelector("#author").value;
+  const title = document.querySelector('#title').value;
+  const author = document.querySelector('#author').value;
   // Validate
-  if (title === "" || author === "") {
+  if (title === '' || author === '') {
     // Do Nothing
   } else {
     // Instatiate book
@@ -56,7 +56,7 @@ document.querySelector("#book-form").addEventListener("submit", (e) => {
 });
 
 // Event: Remove a Book
-document.querySelector("#book-list-table").addEventListener("click", (e) => {
+document.querySelector('#book-list-table').addEventListener('click', (e) => {
   // Remove book from UI
   UI.deleteBook(e.target);
 
