@@ -1,11 +1,11 @@
 import domSelectors from './modules/domSelectors.js';
 import Store from './modules/LocalStorage.js';
 import Book from './modules/Book.js';
-// import UI from './modules/UI.js';
+import { DateTime } from "./node_modules/luxon/src/luxon.js";
 
-setInterval(() => {
-  document.getElementById('date').textContent = new Date();
-}, 1000);
+let date = document.querySelector('#date');
+
+date.textContent = DateTime.now();
 
 // Show bookList
 domSelectors.bookListView.classList.toggle('show');
