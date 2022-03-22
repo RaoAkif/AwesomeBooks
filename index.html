@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <title>Awesome Books</title>
 </head>
 <body>
-    
-    
-    <script src="./index.js"></script>
+    <header id="header">
+      <div id="nav-bar-div"><a href="./index.html">Awesome Books</a></div>
+      <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-list-items"><a id="book-list" href="#">Book List</a></li>
+            <li class="nav-list-items"><a id="add-book" href="#">Add Book</a></li>
+            <li class="nav-list-items"><a id="contact" href="#">Contact</a></li>                    
+        </ul>
+      </nav>
+    </header>
+    <div id="date-div"><div id="date">5pm eastern time</div></div>
+    <section class="sec-all-books">
+      <h2>All Awesome Books</h2>
+      <table id="book-list-table">
+      </table>
+    </section>
+    <section class="sec-add-book">
+      <div id="form-div">
+        <h2>Add a new book</h2>
+        <form id="book-form">
+          <input type="text" id="title"><br> 
+          <input type="text" id="author"><br>
+          <input type="submit" value="Add Book">
+        </form>
+      </div>
+    </section>
+    <section class="sec-contact-us">
+      <h1>Contact Information</h1>
+          <p>Do you have any questions or you just want to say "Hello"?</p>
+          <p>You can reach out to us!</p>
+          <ul>
+            <li>Our Email: mail@mail.com</li>
+            <li>Phone: 911</li>
+            <li>Address: Capitol Hill</li>
+          </ul>
+    </section>
+    <footer>
+      Copyright 2022, Rights Reserved.
+    </footer>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
