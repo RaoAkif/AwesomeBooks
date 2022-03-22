@@ -159,3 +159,6 @@ body {
     font-weight: bold;
   }
   
+  #delete-btn {
+    color: black;
+  }
