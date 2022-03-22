@@ -27,8 +27,7 @@ class Store {
     localStorage.setItem('books', JSON.stringify(books));
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
-    }
   }
+}
 
 export default Store;
-
