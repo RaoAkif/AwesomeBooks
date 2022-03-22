@@ -59,9 +59,10 @@ class UI {
       el.parentElement.parentElement.parentElement.remove();
     }
   }
+
   static clearFields() {
-    document.querySelector("#title").value = "";
-    document.querySelector("#author").value = "";
+    document.querySelector('#title').value = '';
+    document.querySelector('#author').value = '';
   }
 }
 
@@ -76,7 +77,6 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   const author = document.querySelector('#author').value;
   // Validate
   if (title === '' || author === '') {
-    return
   } else {
     // Instatiate book
     const book = new Book(title, author);
