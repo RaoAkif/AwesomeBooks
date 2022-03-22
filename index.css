@@ -34,7 +34,7 @@ tr {
 
 tr:nth-child(odd) {
   background-color: #f2f2f2;
-}  
+}
 
 .alert {
   padding-bottom: 5px;
@@ -83,7 +83,7 @@ td {
   font-weight: bold;
   padding: 5px;
   margin: 0 4px 0 4px;
-  box-shadow: 3px 3px 0px black;
+  box-shadow: 3px 3px 0 black;
 }
 
 #nav-bar-div {
