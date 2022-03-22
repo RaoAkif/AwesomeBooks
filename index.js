@@ -1,9 +1,9 @@
 import domSelectors from './modules/domSelectors.js';
 import Store from './modules/LocalStorage.js';
 import Book from './modules/Book.js';
-import { DateTime } from "./node_modules/luxon/src/luxon.js";
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
-let date = document.querySelector('#date');
+const date = document.querySelector('#date');
 
 date.textContent = DateTime.now();
 
@@ -59,6 +59,10 @@ class UI {
       el.parentElement.parentElement.parentElement.remove();
     }
   }
+  static clearFields() {
+    document.querySelector("#title").value = "";
+    document.querySelector("#author").value = "";
+  }
 }
 
 // Event: Display Books
@@ -72,7 +76,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   const author = document.querySelector('#author').value;
   // Validate
   if (title === '' || author === '') {
-    // Do Nothing
+    return
   } else {
     // Instatiate book
     const book = new Book(title, author);
