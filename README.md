@@ -23,10 +23,10 @@ Use the following steps to run this Project locally:
 - Open the terminal
 
 - Run this command:
-`git clone https://github.com/RaoAkif/AwesomeBooks_ES6.git`
+`git clone https://github.com/RaoAkif/AwesomeBooks.git`
 
 - Enter in to the folder:
-`cd AwesomeBooks_ES6`
+`cd AwesomeBooks`
 
 - Open the folder with a code editor (VS Code preferred)
 
