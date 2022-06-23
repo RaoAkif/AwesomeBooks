@@ -1,6 +1,6 @@
 # Awesome Books
 
-> CRUD Operation for Books
+> Simple app that adds books title and authors to a list. The books could be added, deleted and edited, creating a complete CRUD operation.
 
 
 ## Built With
